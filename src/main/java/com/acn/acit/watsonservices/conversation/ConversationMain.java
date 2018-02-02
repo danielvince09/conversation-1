@@ -37,9 +37,9 @@ public class ConversationMain {
 
 	public static MessageResponse conversationAPI(String input, Map context) {
 		ConversationService service = new ConversationService("2017-02-03");
-		service.setUsernameAndPassword("979066d9-b1f2-426a-a9d5-ecb96a7ae896", "onfWtATZL4ZU");
+		service.setUsernameAndPassword("0896e7f5-0056-4df7-beba-0b15d38673c0", "Gl36m0vLZ58v");
 		MessageRequest newMessage = new MessageRequest.Builder().inputText(input).context(context).build();
-		String workspaceId = "0accd695-8e90-4ad0-bcc4-cd667c8d93bc";
+		String workspaceId = "a537f788-0f39-4d13-abd4-f503545fa073";
 		MessageResponse response = service.message(workspaceId, newMessage).execute();
 		return response;
 	}
